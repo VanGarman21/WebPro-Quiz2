@@ -35,12 +35,10 @@
 
 <body class="discussion">
 
-    <section class="discussion-title">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/DizcussJSP/homepage.jsp">
-                    <img src="images/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 1rem">
+                    <img src="images/icon.png" alt="" width="100" height="40" class="d-inline-block align-text-top" style="margin-right: 1rem">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -77,6 +75,8 @@
                 </div>
             </div>
         </nav>
+        
+	  <section class="discussion-title">        
         <main class="discussion-title-content">
             <h1 class="mb-5 mt-2">
                 Create a New Discussion
@@ -97,6 +97,7 @@
                 </div>
             </div>
         </main>
+        
     </section>
     <br>
     <br>
