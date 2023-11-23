@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Dizcuzz · Change Password</title>
+    <title>MyITS Community ï¿½ Change Password</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -36,11 +36,10 @@
 
 <body class="text-center">
     <section class="section-contents">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/MyITSCommunity/homepage.jsp">
                     <img src="images/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 1rem">
-                    Dizcuzz
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,18 +47,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link" aria-current="page" href="/MyITSCommunity/homepage.jsp">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/users">Users</a>
+                            <a class="nav-link active" href="/MyITSCommunity/users.jsp">Users</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Profile
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/profile">View Profile</a></li>
-                                <li><a class="dropdown-item" href="/change_password">Change Password</a></li>
+                                <li><a class="dropdown-item" href="/MyITSCommunity/profile.jsp">View Profile</a></li>
+                                <li><a class="dropdown-item" href="/MyITSCommunity/change_password.jsp">Change Password</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -67,17 +66,22 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/new_post">New Post</a>
+                            <a class="nav-link" href="/MyITSCommunity/newpost.jsp">New Post</a>
                         </li>
                     </ul>
+                    <form class="d-flex" method="get" action="/search/user">
+                        <input name="username" class="form-control me-2" type="search" placeholder="Search Users" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
+        
         <main class="form-signin">
 		    <form method="POST" action="/change_password">
 		        <%-- JSP equivalent of @csrf --%>
 		        <input type="hidden" name="_csrf" value="<%= request.getAttribute("_csrf") %>" />
-		        <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
+		        <img class="mb-4" src="images/logo.png" alt="" width="175" height="77">
 		        <h1 class="h3 mb-3 fw-normal">Change Password</h1>
 		        <div class="form-floating">
 		            <input type="password" class="form-control <%= request.getAttribute("invalid") != null ? "is-invalid" : "" %>" id="floatingInput" placeholder="Password" name="oldpassword">
@@ -102,7 +106,7 @@
 			    </div>
 			
 			    <button class="w-100 btn btn-lg btn-primary" type="submit">Change Password</button>
-			    <p class="mt-5 mb-3 text-muted">&copy; 2023 Dizcuzz</p>
+			    <p class="mt-5 mb-3 text-muted">&copy; MyITS Community</p>
 			</form>
 		</main>   
     </section>

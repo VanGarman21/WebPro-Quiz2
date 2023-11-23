@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Dizcuzz</title>
+<title>MyITS Community</title>
 </head>
 <body>
 <%

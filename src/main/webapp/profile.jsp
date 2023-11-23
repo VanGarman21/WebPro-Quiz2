@@ -34,12 +34,12 @@
 
 <body>
     <!-- Rest of the HTML content remains the same -->
- <section class="discussion-title">
+ <section class="profile">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/MyITSCommunity/homepage.jsp">
-                    <img src="images/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 1rem">
+                    <img src="images/icon.png" alt="" width="100" height="40" class="d-inline-block align-text-top" style="margin-right: 1rem">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/MyITSCommunity/profile.jsp">View Profile</a></li>
-                                <li><a class="dropdown-item" href="/change_password">Change Password</a></li>
+                                <li><a class="dropdown-item" href="/MyITSCommunity/change_password.jsp">Change Password</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -66,7 +66,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/new_post">New Post</a>
+                            <a class="nav-link" href="/MyITSCommunity/newpost.jsp">New Post</a>
                         </li>
                     </ul>
                     <form class="d-flex" method="get" action="/search/user">
@@ -76,30 +76,27 @@
                 </div>
             </div>
         </nav>
-
+        
        <div class="wrapper">
         <div class="profile-information">
-            <img class="profile-logo1" src="../images/profile.png" alt="profile-logo">
+            <img class="profile-logo1" src="images/profile.png" alt="profile-logo">
             <div class="profile-name">
                 <h1>
-                    
+                    usermee
                 </h1>
                 <span>
-              
+              		@ usermee
                 </span>
             
                     <form action="/follow/" method="POST">
                         <input type="hidden" name="_csrf" value="<%= request.getAttribute("org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN") %>">
-                        <button type="submit" class="follow-button">
-                           
-                                Follow
-                          
-                                Followed
-                         
-                        </button>
                     </form>
-               
+                    
+               		0 Following � 0 Followers
+               		
             </div>
+            <br>
+            </br>
         </div>
 
         <div class="favorite-list">
@@ -108,7 +105,7 @@
         
             <main class="discussion-title-content">
                 <div class="author-information">
-                    <img class="profile-logo" src="../images/profile.png" alt="profile-logo">
+                    <img class="profile-logo" src="images/profile.png" alt="profile-logo">
                       </div>
                 <a href="/discussion/">
                     <h1>

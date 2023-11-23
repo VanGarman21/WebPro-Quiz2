@@ -39,11 +39,11 @@
     <form action="/register" method="POST">
         <%-- Add CSRF token here --%>
         <input type="hidden" name="_csrf" value="<%=request.getAttribute("org.apache.catalina.ASYNC_SUPPORTED")%>" />
-        <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
+        <img class="mb-4" src="images/logo.png" alt="" width="175" height="77">
         <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
 
         <div class="form-floating">
-            <input type="text" class="form-control <%= request.getAttribute("javax.servlet.error.request_uri") == null ? "" : "is-invalid" %>" id="floatingInput" placeholder="Example123" name="username" value="${param.username}">
+            <input type="username" class="form-control <%= request.getAttribute("javax.servlet.error.request_uri") == null ? "" : "is-invalid" %>" id="floatingInput" placeholder="Example123" name="username" value="${param.username}">
             <label for="floatingInput">Username</label>
         </div>
         <%-- Add validation error message here --%>
@@ -52,7 +52,7 @@
         <% } %>
 
         <div class="form-floating">
-            <input type="text" class="form-control <%= request.getAttribute("javax.servlet.error.request_uri") == null ? "" : "is-invalid" %>" id="floatingInput" placeholder="Example123" name="fullname" value="${param.fullname}">
+            <input type="fullname" class="form-control <%= request.getAttribute("javax.servlet.error.request_uri") == null ? "" : "is-invalid" %>" id="floatingInput" placeholder="Example123" name="fullname" value="${param.fullname}">
             <label for="floatingInput">Fullname</label>
         </div>
         <%-- Add validation error message here --%>
@@ -83,7 +83,7 @@
         <p>Already have an account? <a href="login.jsp">Sign in</a></p>
 
         <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2023 Dizcuzz</p>
+        <p class="mt-5 mb-3 text-muted">&copy; MyITS Community</p>
     </form>
 </main>
 
