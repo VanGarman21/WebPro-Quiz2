@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Dizcuzz · Home</title>
+    <title>MyITS Community · Home</title>
     <link rel="icon" type="image/x-icon" href="images/icon.jpg">
 
 
@@ -36,11 +36,10 @@
 <body class="discussion">
 
     <section class="discussion-title">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="images/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 1rem">
-                    Dizcuzz
+                    <img src="images/icon.png" alt="" width="75" height="auto" class="d-inline-block align-text-top" style="margin-right: 1rem">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,19 +52,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="users.jsp">Users</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Profile
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/profile">View Profile</a></li>
-                                <li><a class="dropdown-item" href="changepassword.jsp">Change Password</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                            </ul>
+                        
+                         <li class="nav-item">
+                            <a class="nav-link" href="changepassword.jsp">Change Password</a>
                         </li>
+                      
                         <li class="nav-item">
                             <a class="nav-link" href="newpost.jsp">New Post</a>
                         </li>

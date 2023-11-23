@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Dizcuzz · Login</title>
+    <title>MyITS Community · Login</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -37,7 +37,7 @@
     <form method="POST" action="/login">
         <%-- Use the following line to add a CSRF token to the form --%>
         <input type="hidden" name="_csrf" value="<%=request.getAttribute("org.apache.catalina.ASYNC_SUPPORTED")%>">
-            <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
+            <img class="mb-4" src="images/logo.png" alt="" width="175" height="77">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     <% if (session.getAttribute("success") != null) { %>
         <div class="alert alert-success">
@@ -90,7 +90,7 @@
     </div>
 
     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2023 Dizcuss</p>
+     <p class="mt-5 mb-3 text-muted">&copy; MyITS Community</p>
 </form>
        </main>
 
