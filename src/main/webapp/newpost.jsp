@@ -39,7 +39,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/DizcussJSP/homepage.jsp">
+                <a class="navbar-brand" href="/MyITSCommunity/homepage.jsp">
                     <img src="images/icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 1rem">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,18 +48,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/DizcussJSP/homepage.jsp">Home</a>
+                            <a class="nav-link" aria-current="page" href="/MyITSCommunity/homepage.jsp">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/DizcussJSP/users.jsp">Users</a>
+                            <a class="nav-link active" href="/MyITSCommunity/users.jsp">Users</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Profile
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/DizcussJSP/profile.jsp">View Profile</a></li>
-                                <li><a class="dropdown-item" href="/DizcussJSP/change_password.jsp">Change Password</a></li>
+                                <li><a class="dropdown-item" href="/MyITSCommunity/profile.jsp">View Profile</a></li>
+                                <li><a class="dropdown-item" href="/MyITSCommunity/change_password.jsp">Change Password</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -67,7 +67,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/DizcussJSP/newpost.jsp">New Post</a>
+                            <a class="nav-link" href="/MyITSCommunity/newpost.jsp">New Post</a>
                         </li>
                     </ul>
                     <form class="d-flex" method="get" action="/search/user">
