@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Dizcuzz · Register</title>
+    <title>MyITS Community · Register</title>
 
 
     <!-- Bootstrap core CSS -->

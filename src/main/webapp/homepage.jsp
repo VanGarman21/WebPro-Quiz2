@@ -66,6 +66,7 @@
                         <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                 </div>
+                </div>
         </nav>
        
     </section>

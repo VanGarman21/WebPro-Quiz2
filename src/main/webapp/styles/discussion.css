@@ -5,8 +5,8 @@ body{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 40px;
-    background-color: rgba(59, 108, 139, 0.5);
-    background-image: url(../images/isometric-cube-pattern.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-image: url(../images/isometric-cube-pattern.png); */
     height: fit-content;
     width: fit-content;
     max-width: 100%;
