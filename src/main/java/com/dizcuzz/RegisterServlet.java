@@ -31,9 +31,9 @@ public class RegisterServlet extends HttpServlet {
       return;
     }
 
-    // Create database connection
-    String url = "jdbc:mysql://localhost:3333/dizcuss?user=root";
-    Connection conn = null;
+    // Create database connection with password
+    String url = "jdbc:mysql://localhost:3306/dizcuss?user=root&password=155dc+11b-6F";
+    Connection conn = null; // Database connection null karena belum terkoneksi
     try {
       conn = DriverManager.getConnection(url);
 
